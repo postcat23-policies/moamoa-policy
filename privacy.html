@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>모아모아 개인정보처리방침</title>
+<style>
+  :root{
+    --bg:#ffffff; --fg:#1a1a1a; --muted:#5b5b5b; --line:#e5e5e5;
+    --accent:#2f6df6; --card:#f7f8fa;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#15171a; --fg:#e8e8e8; --muted:#a2a2a2; --line:#2c2f34;
+           --accent:#6ea0ff; --card:#1d2024; }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",
+    "Malgun Gothic",sans-serif;line-height:1.7;
+    -webkit-text-size-adjust:100%;}
+  .wrap{max-width:760px;margin:0 auto;padding:40px 16px 80px;}
+  h1{font-size:1.6rem;margin:0 0 4px;letter-spacing:-.02em;}
+  h2{font-size:1.15rem;margin:34px 0 10px;padding-top:14px;border-top:1px solid var(--line);letter-spacing:-.01em;}
+  h2:first-of-type{border-top:0;}
+  p,li{color:var(--fg);}
+  .meta{color:var(--muted);font-size:.9rem;margin:0 0 8px;}
+  a{color:var(--accent);word-break:break-all;}
+  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:.95rem;}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top;}
+  th{background:var(--card);font-weight:600;}
+  ul{padding-left:20px;}
+  li{margin:4px 0;}
+  .note{background:var(--card);border:1px solid var(--line);border-radius:10px;
+    padding:12px 14px;color:var(--muted);font-size:.92rem;margin:14px 0;}
+  code{background:var(--card);padding:1px 6px;border-radius:5px;font-size:.88em;}
+  footer{margin-top:40px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding-top:16px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>모아모아(moamoa) 개인정보처리방침</h1>
+  <p class="meta">시행일: 2026년 10월 17일 · 최종 개정: 2026년 10월 17일</p>
+
+  <p>모아모아(이하 ‘앱’)는 개인 개발자가 운영하는 모임 계획 서비스입니다. 본 방침은
+  앱이 이용자의 개인정보를 어떻게 수집·이용·보관·파기하며 누구와 공유하는지를 설명합니다.</p>
+
+  <h2>1. 수집하는 개인정보 항목</h2>
+  <table>
+    <tr><th>구분</th><th>항목</th><th>수집 시점</th></tr>
+    <tr><td>계정·프로필</td><td>카카오 닉네임, 카카오 프로필 이미지 URL, 카카오 회원 고유 식별자</td><td>카카오 로그인 시</td></tr>
+    <tr><td>기기 식별자</td><td>푸시 알림용 기기 토큰(FCM 토큰)</td><td>로그인 및 알림 사용 시</td></tr>
+    <tr><td>이용자 생성 콘텐츠</td><td>모임 정보, 초대 코드, 날짜·활동 투표, 태그·활동, 타임라인, 활동 댓글, 알림 설정</td><td>앱 사용 시</td></tr>
+  </table>
+  <p class="note">앱은 카카오 계정의 <strong>이메일 주소를 수집하지 않습니다.</strong>
+  로그인 과정에서 닉네임·프로필 이미지·회원 식별자만 전달받아 저장합니다.</p>
+
+  <h2>2. 수집·이용 목적</h2>
+  <ul>
+    <li>카카오 계정을 이용한 회원 식별 및 로그인</li>
+    <li>모임 생성·초대·투표·일정 확정 등 핵심 기능 제공</li>
+    <li>모임 참여자 간 알림(푸시) 발송</li>
+    <li>서비스 운영·오류 대응 및 품질 개선</li>
+  </ul>
+
+  <h2>3. 제3자 제공 및 처리위탁</h2>
+  <p>앱은 서비스 제공에 필요한 범위에서 아래 사업자의 인프라를 통해 데이터를 처리합니다.</p>
+  <table>
+    <tr><th>수탁/연동 사업자</th><th>처리 내용</th></tr>
+    <tr><td>Supabase</td><td>데이터베이스 저장, 인증, 실시간 동기화 등 백엔드 처리</td></tr>
+    <tr><td>카카오(Kakao)</td><td>카카오 로그인(OAuth) 및 카카오톡 공유 기능</td></tr>
+    <tr><td>Google Firebase (FCM)</td><td>푸시 알림 전송</td></tr>
+  </table>
+  <p>앱은 이용자의 개인정보를 위 처리 목적 외의 제3자에게 판매하거나 양도하지 않습니다.</p>
+
+  <h2>4. 보관 및 파기</h2>
+  <ul>
+    <li>개인정보는 이용자가 서비스를 이용하는 동안 보관됩니다.</li>
+    <li>이용자가 앱 내에서 계정 삭제를 실행하면, 해당 계정과 연결된 개인정보 및 이용자 생성
+      데이터가 지체 없이 파기됩니다. <strong>삭제된 데이터는 복구할 수 없습니다.</strong></li>
+    <li>관련 법령에 따라 보관이 필요한 정보가 있는 경우, 해당 기간 동안 분리 보관 후 파기합니다.</li>
+  </ul>
+
+  <h2>5. 이용자의 권리와 계정 삭제</h2>
+  <ul>
+    <li>이용자는 앱 내 ‘설정 &gt; 계정 삭제’에서 <strong>본인이 직접 계정과 데이터를 삭제</strong>할 수 있습니다.</li>
+    <li>삭제는 운영자의 별도 승인·확인·검토 절차 없이 이용자의 실행 즉시 이루어지며, 삭제에 대한 책임은 이용자 본인에게 있습니다.</li>
+    <li>삭제 실행 전 ‘삭제된 데이터는 복구할 수 없다’는 안내에 동의한 경우에만 삭제가 진행됩니다. <strong>삭제된 데이터는 복구할 수 없습니다.</strong></li>
+  </ul>
+
+  <h2>6. 데이터 보안</h2>
+  <p>앱과 서버 간 통신은 HTTPS/TLS로 암호화되어 전송됩니다.</p>
+
+  <h2>7. 아동의 개인정보</h2>
+  <p>앱은 아동을 주 대상으로 하지 않으며, 관련 법령상 보호가 필요한 연령의 이용자에 대해서는
+  해당 법령을 준수합니다.</p>
+
+  <h2>8. 문의처</h2>
+  <p>개인정보 관련 문의 및 요청은 아래로 연락해 주시기 바랍니다.<br>
+  이메일: <a href="mailto:postcat23+moamoa@gmail.com">postcat23+moamoa@gmail.com</a></p>
+
+  <h2>9. 방침의 변경</h2>
+  <p>본 방침은 법령·서비스 변경에 따라 개정될 수 있으며, 개정 시 본 페이지에 시행일과 함께 공지합니다.</p>
+
+  <footer>© 2026 모아모아(moamoa). 본 페이지는 Google Play 개인정보처리방침 요건 충족을 위해 제공됩니다.</footer>
+</div>
+</body>
+</html>
